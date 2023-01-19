@@ -12,12 +12,15 @@ header {
   background-color: #EEEEEE;
   width: 100%;
   display: flex;
+  height: 130px;
+  position: block;
 }
 
 .nav-logo img {
   margin: auto;
+  margin-top: 30px;
   margin-left: 40px;
-  width: 100px;
+  width: 150px;
   transition: all 300ms ease;
   cursor: pointer;
 }
@@ -29,9 +32,10 @@ header {
 .nav-links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: auto;
   height: 100%;
+  width: 90%;
 }
 
 .nav-links li {
@@ -45,11 +49,18 @@ header {
 }
 
 .nav-links li ul {
+  background-color: #EEEEEE;
   display: none;
   position: absolute;
-  min-width: 140px;
+  width: 150px;
   padding: 10px;
-  top: 35px;
+  top: 40px;
+}
+
+.nav-links li ul li {
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .nav-links li:hover > ul {
@@ -70,4 +81,20 @@ header {
   background-color: #c7c5c5;
   color: rgb(58, 57, 57);
   border-radius: 3px;
+}
+
+.ctn-main {
+  width: 100vw;
+}
+
+.ctn-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.ctn-title h1 {
+  font-size: 60px;
 }/*# sourceMappingURL=main.css.map */
