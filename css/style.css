@@ -11,7 +11,8 @@ header {
   width: 100%;
   display: flex;
   height: 130px;
-  position: block; }
+  position: fixed;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2); }
 
 .nav-logo img {
   margin: auto;
@@ -47,7 +48,8 @@ header {
   position: absolute;
   width: 150px;
   padding: 10px;
-  top: 40px; }
+  top: 40px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
 
 .nav-links li ul li {
   width: 100%;
@@ -78,8 +80,94 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  margin-top: 40px; }
+  height: 400px;
+  background-image: url("https://img.interempresas.net/fotos/325570.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%; }
 
 .ctn-title h1 {
-  font-size: 60px; }
+  font-size: 60px;
+  margin-top: 100px; }
+
+.ctn-section1 {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 70vh; }
+
+.ctn-texto {
+  display: flex;
+  flex-direction: column;
+  width: 50%; }
+
+.ctn-texto h3 {
+  font-size: 15px;
+  margin-top: 40px;
+  margin-left: 40px;
+  text-transform: uppercase; }
+
+.ctn-texto h2 {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 90%; }
+
+.ctn-texto span {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
+  width: 80%; }
+
+.ctn-texto p {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-left: 40px;
+  line-height: 25px;
+  width: 80%; }
+
+.btn {
+  width: 200px;
+  margin: auto;
+  margin-left: 40px;
+  margin-top: 30px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 300ms ease; }
+
+.btn:hover {
+  scale: 1.1; }
+
+.ctn-img {
+  width: 50%;
+  margin: auto; }
+
+.ctn-img img {
+  width: 500px; }
+
+.ctn-section2 {
+  background-color: #EEEEEE;
+  margin-top: 60px; }
+
+.ctn-checklist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px; }
+
+.checklist {
+  margin: 10px;
+  padding: 10px;
+  width: 250px; }
+
+.checklist ol {
+  margin-left: 20px; }
+
+.checklist ol li {
+  font-size: 14px;
+  padding: 5px;
+  list-style: none;
+  text-align: left; }
