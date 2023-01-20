@@ -3,6 +3,86 @@
   padding: 0;
   box-sizing: border-box; }
 
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+  background-color: #EEEEEE; }
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px; }
+
+.box__footer .logo img {
+  width: 100px; }
+
+.box__footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #363333;
+  font-size: 18px; }
+
+.box__footer .terms p {
+  font-size: 12px; }
+
+.box__footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700; }
+
+.box__footer a {
+  margin-top: 10px;
+  color: #363333;
+  font-weight: 600;
+  text-decoration: none; }
+
+.box__footer a:hover {
+  opacity: 0.8;
+  cursor: pointer; }
+
+.box__footer a .fa-brands {
+  font-size: 20px; }
+
+.box__copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px; }
+
+.box__copyright p {
+  margin-top: 20px;
+  color: #383838;
+  font-size: 10px; }
+
+.box__copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a; }
+
+@media screen and (max-width: 800px) {
+  .toggle {
+    display: inline-block; }
+  .nav-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #021222;
+    text-align: center;
+    overflow: hidden;
+    height: calc(100vh - 80px);
+    width: 100%;
+    z-index: -1;
+    top: -100vh;
+    transition: .5s; }
+  .active {
+    top: 80px; }
+  .nav-links .link:hover {
+    background: #051c38; } }
+
 header {
   width: 100vw; }
 
@@ -78,14 +158,16 @@ header {
   width: 100vw; }
 
 .ctn-title {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
+  height: 30rem;
   background-image: url("https://img.interempresas.net/fotos/325570.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%; }
+  background-size: 100%;
+  flex-wrap: wrap; }
 
 .ctn-title h1 {
   font-size: 60px;
@@ -96,7 +178,8 @@ header {
   flex-direction: row;
   align-items: center;
   width: 100vw;
-  height: 100%; }
+  height: 100%;
+  flex-wrap: wrap; }
 
 .ctn-texto {
   display: flex;
@@ -146,11 +229,12 @@ header {
   margin: auto; }
 
 .ctn-img img {
-  width: 500px; }
+  width: 80%; }
 
 .ctn-section2 {
   background-color: #EEEEEE;
-  margin-top: 60px; }
+  margin-top: 60px;
+  flex-wrap: wrap; }
 
 .ctn-checklist {
   display: flex;
@@ -159,7 +243,8 @@ header {
   width: 100%;
   margin: auto;
   margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  flex-wrap: wrap; }
 
 .checklist {
   margin: 10px;
@@ -181,7 +266,8 @@ header {
   height: 100%;
   display: flex;
   flex-direction: row;
-  width: 100%; }
+  width: 100%;
+  flex-wrap: wrap; }
 
 .ctn-card {
   display: flex;
@@ -266,3 +352,35 @@ header {
 
 .ctn-section4 input {
   margin: auto; }
+
+@media screen and (max-width: 768px) {
+  .ctn-section3 {
+    flex-direction: column;
+    align-items: center; }
+  .ctn-texto h3 {
+    text-align: center; }
+  .ctn-texto h2 {
+    text-align: center; }
+  .ctn-texto span {
+    text-align: center;
+    width: 90%; }
+  .ctn-texto p {
+    text-align: center;
+    width: 80%;
+    margin-left: 60px; }
+  .btn {
+    width: 200px;
+    margin: auto;
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms ease; }
+  .ctn-card {
+    width: 80%; } }
+
+@media screen and (max-width: 425px) {
+  .ctn-section1 {
+    flex-direction: column;
+    align-items: center; } }
