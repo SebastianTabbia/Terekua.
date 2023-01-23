@@ -9,7 +9,7 @@ header {
     height: 130px;
     position: fixed;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 100;
 }
 
 .nav-logo img {
@@ -27,11 +27,11 @@ header {
 
 .nav-links {
     display: flex;
-    align-items:center;
-    justify-content:space-evenly;
+    align-items: center;
+    justify-content: center;
     margin: auto;
     height: 100%;
-    width: 90%;
+    width: 70%;
 }
 
 .nav-links li {
@@ -39,7 +39,6 @@ header {
     display: flex;
     justify-content: space-around;
     margin: auto;
-    margin-left: 50px;
     text-decoration: none;
     position: relative,
 }
@@ -48,7 +47,7 @@ header {
     background-color: #EEEEEE;
     display: none;
     position: absolute;
-   width: 150px;
+    width: 150px;
     padding: 10px;
     top: 40px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -58,6 +57,7 @@ header {
     width: 100%;
     margin: auto;
     text-align: center;
+    z-index: 100;
 
 }
 
@@ -82,4 +82,74 @@ header {
 
 }
 
-@media screen and (max-width: 800px) {}
+
+.toggle {
+    color: #000000;
+    font-size: 30px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: .3s;
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+    .toggle {
+        display: inline-block;
+        margin-left: 500px;
+    }
+
+    .nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: #EEEEEE;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 80px);
+        width: 100%;
+        z-index: -50;
+        top: -100vh;
+        transition: .5s;
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .nav-links .link:hover {
+        background: #051c38;
+    }
+
+    .nav-logo img {
+        width: 120px;   
+    }
+}
+
+@media screen and (max-width:425px) {
+    .toggle {
+        margin-left: 170px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .toggle {
+        margin-left: 110px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .toggle {
+        margin-left: 100px;
+    }
+
+    .nav-logo img {
+        margin-top: 40px;
+        width: 90px;   
+    }
+
+}

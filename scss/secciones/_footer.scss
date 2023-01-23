@@ -10,11 +10,13 @@
 .box__footer {
     display: flex;
     flex-direction: column;
+    margin: auto;
     padding: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .box__footer .logo img{
-
     width: 100px;
 }
 
