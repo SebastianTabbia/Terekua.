@@ -187,11 +187,13 @@ header {
 
 .toggle {
   color: #000000;
-  font-size: 30px;
+  font-size: 20px;
   transform: rotate(90deg);
   cursor: pointer;
   transition: 0.3s;
   display: none;
+  position: absolute;
+  translate: 220px 50px;
 }
 
 .rotate {
@@ -201,7 +203,7 @@ header {
 @media screen and (max-width: 768px) {
   .toggle {
     display: inline-block;
-    margin-left: 500px;
+    translate: 720px 50px;
   }
   .nav-links {
     position: absolute;
@@ -228,17 +230,17 @@ header {
 }
 @media screen and (max-width: 425px) {
   .toggle {
-    margin-left: 170px;
+    translate: 390px 50px;
   }
 }
 @media screen and (max-width: 375px) {
   .toggle {
-    margin-left: 110px;
+    translate: 330px 50px;
   }
 }
 @media screen and (max-width: 320px) {
   .toggle {
-    margin-left: 100px;
+    translate: 280px 50px;
   }
   .nav-logo img {
     margin-top: 40px;
