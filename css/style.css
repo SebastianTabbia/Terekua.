@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -138,7 +139,8 @@ header {
   width: 100%;
   margin: auto;
   text-align: center;
-  z-index: 100; }
+  z-index: 100;
+  font-family: 'Roboto', sans-serif; }
 
 .nav-links li:hover > ul {
   display: block; }
@@ -147,14 +149,16 @@ header {
   text-decoration: none;
   color: black;
   background-color: #EEEEEE;
-  font-size: 15px;
+  font-size: 14px;
   padding: 10px 15px;
   transition: .3s;
-  list-style: none; }
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600; }
 
 .nav-links a:hover {
-  background-color: #c7c5c5;
-  color: #3a3939;
+  background-color: #000000;
+  color: white;
   border-radius: 3px; }
 
 .toggle {
@@ -225,7 +229,10 @@ header {
 
 .ctn-title h1 {
   font-size: 60px;
-  margin-top: 100px; }
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: #fff; }
 
 .ctn-section1 {
   display: flex;
@@ -245,26 +252,33 @@ header {
   margin: auto;
   margin-top: 40px;
   text-transform: uppercase;
-  width: 80%; }
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
 
 .ctn-texto h2 {
   font-size: 35px;
   margin: auto;
   margin-top: 10px;
-  width: 80%; }
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800; }
 
 .ctn-texto span {
   font-size: 20px;
   margin: auto;
   margin-top: 10px;
-  width: 80%; }
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
 
 .ctn-texto p {
   font-size: 16px;
   margin: auto;
   margin-top: 20px;
   line-height: 25px;
-  width: 80%; }
+  width: 80%;
+  font-family: 'Roboto', sans-serif; }
 
 .btn {
   width: 200px;
@@ -273,7 +287,8 @@ header {
   padding: 15px;
   cursor: pointer;
   border-radius: 8px;
-  transition: all 300ms ease; }
+  transition: all 300ms ease;
+  font-family: 'Roboto', sans-serif; }
 
 .btn:hover {
   scale: 1.1; }
@@ -284,7 +299,8 @@ header {
 
 .ctn-img img {
   margin: auto;
-  max-width: 90%; }
+  max-width: 90%;
+  margin-top: 40px; }
 
 .ctn-section2 {
   background-color: #EEEEEE;
@@ -314,6 +330,9 @@ header {
   padding: 5px;
   list-style: none;
   text-align: left; }
+
+.fa-solid {
+  color: #0d990d; }
 
 .ctn-section3 {
   background-color: #EEEEEE;

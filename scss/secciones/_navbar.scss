@@ -58,7 +58,7 @@ header {
     margin: auto;
     text-align: center;
     z-index: 100;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-links li:hover>ul {
@@ -69,15 +69,17 @@ header {
     text-decoration: none;
     color: rgb(0, 0, 0);
     background-color: #EEEEEE;
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px 15px;
     transition: .3s;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 .nav-links a:hover {
-    background-color: #c7c5c5;
-    color: rgb(58, 57, 57);
+    background-color: #000000;
+    color: rgb(255, 255, 255);
     border-radius: 3px;
 
 }

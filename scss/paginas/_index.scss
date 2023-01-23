@@ -18,6 +18,9 @@
 .ctn-title h1 {
     font-size: 60px;
     margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: #fff;
 }
 
 .ctn-section1 {
@@ -41,6 +44,8 @@
     margin-top: 40px;
     text-transform: uppercase;
     width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 
 }
 
@@ -49,6 +54,8 @@
     margin: auto;
     margin-top: 10px;
     width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
 }
 
 .ctn-texto span {
@@ -56,6 +63,8 @@
     margin: auto;
     margin-top: 10px;
     width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .ctn-texto p {
@@ -64,6 +73,7 @@
     margin-top: 20px;
     line-height: 25px;
     width: 80%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .btn {
@@ -74,6 +84,7 @@
     cursor: pointer;
     border-radius: 8px;
     transition: all 300ms ease;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -89,6 +100,7 @@
 .ctn-img img {
     margin: auto;
     max-width: 90%;
+    margin-top: 40px;
 }
 
 .ctn-section2 {
@@ -123,6 +135,10 @@
     padding: 5px;
     list-style: none;
     text-align: left;
+}
+
+.fa-solid{
+color: rgb(13, 153, 13);
 }
 
 .ctn-section3 {
