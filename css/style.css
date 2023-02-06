@@ -5,6 +5,27 @@
   padding: 0;
   box-sizing: border-box; }
 
+.ctn-title1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  background-image: url("https://m.media-amazon.com/images/I/51VDX4fdE8L._SS400_.jpg");
+  background-repeat: repeat;
+  height: 200px;
+  flex-wrap: wrap; }
+
+.ctn-title1 h1 {
+  font-size: 50px;
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: black;
+  background-color: white;
+  padding: 10px 30px 10px 30px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+
 .container_footer {
   display: flex;
   flex-wrap: wrap;
