@@ -141,11 +141,8 @@ nav .navbar {
   padding: 0 50px;
 }
 
-.navbar .logo a {
-  font-size: 30px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
+.logo img {
+  width: 120px;
 }
 
 nav .navbar .nav-links {
@@ -221,10 +218,6 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .navbar .links li .sub-menu .more-arrow {
   line-height: 40px;
-}
-
-.navbar .links li .htmlCss-more-sub-menu {
-  /* line-height: 40px; */
 }
 
 .navbar .links li .sub-menu .more-sub-menu {
@@ -329,9 +322,6 @@ nav .navbar .links li:hover .js-sub-menu {
   }
 }
 @media (max-width: 800px) {
-  nav {
-    /* position: relative; */
-  }
   .navbar .bx-menu {
     display: block;
   }
