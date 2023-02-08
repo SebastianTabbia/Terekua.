@@ -26,6 +26,7 @@
   color: rgb(0, 0, 0);
   background-color: white;
   padding: 10px 30px 10px 30px;
+  border-radius: 20px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -34,8 +35,6 @@
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .ctn-listado {
@@ -43,12 +42,15 @@
   flex-direction: column;
   background-color: white;
   width: 20%;
-  border-radius: 8px;
+  border-radius: 20px;
+  margin: 20px;
+  height: 610px;
 }
 
 .ctn-listado h2 {
   font-size: 25px;
   padding: 10px 20px 20px 10px;
+  margin-top: 10px;
 }
 
 .ctn-listado h3 {
@@ -59,12 +61,13 @@
 .ctn-lista {
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-bottom: 30px;
 }
 
 .ctn-lista li {
   list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .ctn-lista li a {
@@ -76,20 +79,39 @@
   font-weight: 500;
 }
 
+.ctn-productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
 .ctn-card2 {
   display: flex;
+  width: 100%;
+}
+
+.ctn-card2 div {
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  width: 80%;
 }
 
 .ctn-card2 div h2 {
-  width: 80%;
+  width: 100%;
   font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .ctn-card2 div span {
-  width: 50px;
+  width: 70%;
   font-size: 15px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: row;
 }
 
 .container_footer {
@@ -435,7 +457,7 @@ nav .navbar .links li:hover .js-sub-menu {
     color: #fff;
   }
   .sidebar-logo i,
-.navbar .bx-menu {
+  .navbar .bx-menu {
     font-size: 25px;
     color: #fff;
   }
@@ -469,7 +491,7 @@ nav .navbar .links li:hover .js-sub-menu {
     justify-content: space-between;
   }
   .links li:hover .htmlcss-arrow,
-.links li:hover .js-arrow {
+  .links li:hover .js-arrow {
     transform: rotate(0deg);
   }
   .navbar .links li .sub-menu .more-sub-menu {
@@ -485,16 +507,16 @@ nav .navbar .links li:hover .js-sub-menu {
     display: none;
   }
   nav .navbar .links li:hover .htmlCss-sub-menu,
-nav .navbar .links li:hover .js-sub-menu {
+  nav .navbar .links li:hover .js-sub-menu {
     display: none;
   }
   .navbar .nav-links.show1 .links .htmlCss-sub-menu,
-.navbar .nav-links.show3 .links .js-sub-menu,
-.navbar .nav-links.show2 .links .more .more-sub-menu {
+  .navbar .nav-links.show3 .links .js-sub-menu,
+  .navbar .nav-links.show2 .links .more .more-sub-menu {
     display: block;
   }
   .navbar .nav-links.show1 .links .htmlcss-arrow,
-.navbar .nav-links.show3 .links .js-arrow {
+  .navbar .nav-links.show3 .links .js-arrow {
     transform: rotate(180deg);
   }
   .navbar .nav-links.show2 .links .more-arrow {

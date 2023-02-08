@@ -24,26 +24,28 @@
   color: black;
   background-color: white;
   padding: 10px 30px 10px 30px;
+  border-radius: 20px;
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
 
 .ctn-section3 {
   display: flex;
   width: 100%;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  flex-wrap: wrap; }
 
 .ctn-listado {
   display: flex;
   flex-direction: column;
   background-color: white;
   width: 20%;
-  border-radius: 8px; }
+  border-radius: 20px;
+  margin: 20px;
+  height: 610px; }
 
 .ctn-listado h2 {
   font-size: 25px;
-  padding: 10px 20px 20px 10px; }
+  padding: 10px 20px 20px 10px;
+  margin-top: 10px; }
 
 .ctn-listado h3 {
   font-size: 20px;
@@ -51,12 +53,13 @@
 
 .ctn-lista {
   display: flex;
-  flex-direction: column;
-  margin: auto;
-  margin-bottom: 30px; }
+  flex-direction: column; }
 
 .ctn-lista li {
-  list-style: none; }
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px; }
 
 .ctn-lista li a {
   height: 100%;
@@ -66,18 +69,34 @@
   font-size: 15px;
   font-weight: 500; }
 
+.ctn-productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%; }
+
 .ctn-card2 {
   display: flex;
-  flex-direction: column;
-  width: 80%; }
+  width: 100%; }
+
+.ctn-card2 div {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
 
 .ctn-card2 div h2 {
-  width: 80%;
-  font-size: 20px; }
+  width: 100%;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .ctn-card2 div span {
-  width: 50px;
+  width: 70%;
   font-size: 15px; }
+
+.contenedor {
+  display: flex;
+  flex-direction: row; }
 
 .container_footer {
   display: flex;
