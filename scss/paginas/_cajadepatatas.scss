@@ -60,6 +60,7 @@ flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    width: 20%;
 }
 
 .ctn-lista li a{
@@ -74,14 +75,13 @@ flex-wrap: wrap;
 
   .ctn-productos{
     display: flex;
-
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 70%;
   }
 
   .ctn-card2{
     display: flex;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -97,14 +97,13 @@ flex-wrap: wrap;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .ctn-card2 div span{
-    width: 70%;
+    width: 100%;
     font-size: 15px;
+    text-align: center;
   }
 
-  .contenedor {
-    display: flex;
-    flex-direction: row;
-}
+ 
