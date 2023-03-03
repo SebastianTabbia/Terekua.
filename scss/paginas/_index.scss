@@ -8,11 +8,12 @@
     align-items: center;
     justify-content: center;
     height: 30rem;
-    background-image: url('https://img.interempresas.net/fotos/325570.jpeg');
+    background-image: url('https://res.cloudinary.com/daieukhdg/image/upload/v1677873042/Terekua/Mesa_de_trabajo_1_kxkygr.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     flex-wrap: wrap;
+    height: 350px;
 }
 
 .ctn-title h1 {
@@ -56,6 +57,7 @@
     width: 80%;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
+    color: #566c41;
 }
 
 .ctn-texto span {
@@ -82,9 +84,11 @@
     margin-top: 30px;
     padding: 15px;
     cursor: pointer;
+    border: solid 3px #566c41;
     border-radius: 8px;
     transition: all 300ms ease;
     font-family: 'Roboto', sans-serif;
+    color: #566c41;
 
 }
 
