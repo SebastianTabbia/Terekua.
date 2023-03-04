@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30rem;
     background-image: url('https://res.cloudinary.com/daieukhdg/image/upload/v1677873042/Terekua/Mesa_de_trabajo_1_kxkygr.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -254,7 +253,27 @@ color: rgb(13, 153, 13);
     margin: auto;
 }
 
+@media screen and (max-width: 1024px){
+    .ctn-title {
+        height: 280px;
+    }
+   
+    .ctn-section3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
+    .ctn-title {
+        height: 250px;
+    }
 
     .ctn-section1 {
         flex-direction: column;
