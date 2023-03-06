@@ -1,0 +1,73 @@
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0,5fr 0,5fr 0,5fr 0,5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "banner banner banner"
+        "productos1 productos1 productos1"
+        "productos2 productos2 productos2"
+        "productos3 productos3 productos3";
+}
+
+.banner {
+    grid-area: banner;
+    width: 100%;
+    margin-top: -5px;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.productos1 {
+    grid-area: productos1;
+    width: 100%;
+}
+
+.productos1 .ctn-texto{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.productos2 {
+    grid-area: productos2;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.productos2 .ctn-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos2 .ctn-card figure{
+    width: 400px;
+}
+
+.productos2 .ctn-card figure img{
+    width: 400px;
+}
+
+
+//MEDIA SCREEM
+
+@media screen and (max-width: 1024px) {
+    .productos2 .ctn-card{
+        width: 100%;
+        flex-direction: column;
+        margin: auto;
+ 
+    }
+    
+    .productos2 .ctn-card figure{
+        width: 400px;
+    }
+    
+
+
+}
