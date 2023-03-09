@@ -1,0 +1,45 @@
+.picnic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "banner banner banner banner"
+        "slider slider slider slider"
+        "impacto impacto impacto impacto"
+        "info-tecnica info-tecnica info-tecnica info-tecnica"
+        "ctn-contact ctn-contact ctn-contact ctn-contact";
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.ctn-productos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.slider {
+    grid-area: slider;
+}
+
+.impacto {
+    grid-area: impacto;
+}
+
+.info-tecnica {
+    grid-area: info-tecnica;
+}
+
+.ctn-contact {
+    grid-area: ctn-contact;
+}
+
+
+
+//slider de fotos
+
