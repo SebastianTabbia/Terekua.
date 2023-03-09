@@ -721,7 +721,8 @@ section {
 .productos2 {
   grid-area: productos2;
   width: 100%;
-  margin-top: -100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .productos2 .ctn-card {
