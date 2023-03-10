@@ -174,22 +174,10 @@
   grid-template-rows: 0,5fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "banner banner banner banner" "slider slider ctn-text ctn-text" "impacto impacto impacto impacto" "info-tecnica info-tecnica info-tecnica info-tecnica" "ctn-contact ctn-contact ctn-contact ctn-contact"; }
+  grid-template-areas: "banner banner banner banner" "slider slider slider slider" "impacto impacto impacto impacto" "info-tecnica info-tecnica info-tecnica info-tecnica" "ctn-contact ctn-contact ctn-contact ctn-contact"; }
 
 .banner {
   grid-area: banner; }
-
-.ctn-productos {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
-.slider {
-  grid-area: slider; }
-
-.ctn-text {
-  grid-area: ctn-text; }
 
 .impacto {
   grid-area: impacto; }
@@ -200,14 +188,87 @@
 .ctn-contact {
   grid-area: ctn-contact; }
 
-.picnic {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-
 .slider {
   grid-area: slider;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center; }
+
+.imagenes {
+  width: 50%; }
+
+.referencias {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center; }
+
+.referencias .ctn-texto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-left: 20px;
+  text-align: center; }
+
+.referencias .ctn-texto p {
+  font-size: 14px; }
+
+.ctn-precio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%; }
+
+.ctn-precio h3 {
+  font-size: 40px;
+  font-weight: 800; }
+
+.impacto {
+  grid-area: impacto;
+  width: 100%;
+  background-color: beige;
+  padding-top: 20px; }
+
+.impacto .ctn-texto {
+  width: 100%; }
+
+.impacto .ctn-texto h2 {
+  font-size: 30px; }
+
+.impacto .ctn-texto h3 {
+  font-size: 20px; }
+
+.ctn-contador {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%; }
+
+.contador-ctn {
+  width: 30%; }
+
+@media screen and (max-width: 768px) {
+  .slider {
+    flex-direction: column;
+    height: 100%; }
+  .imagenes {
+    width: 100%;
+    justify-content: flex-start;
+    margin-bottom: 60px; }
+  .referencias {
+    width: 80%;
+    text-align: center; }
+  .ctn-lista1 li {
+    font-size: 14px; } }
 
 .productos {
   display: grid;
