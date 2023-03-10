@@ -171,10 +171,10 @@
 .picnic {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0,5fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "banner banner banner banner" "slider slider slider slider" "impacto impacto impacto impacto" "info-tecnica info-tecnica info-tecnica info-tecnica" "ctn-contact ctn-contact ctn-contact ctn-contact"; }
+  grid-template-areas: "banner banner banner banner" "slider slider ctn-text ctn-text" "impacto impacto impacto impacto" "info-tecnica info-tecnica info-tecnica info-tecnica" "ctn-contact ctn-contact ctn-contact ctn-contact"; }
 
 .banner {
   grid-area: banner; }
@@ -188,6 +188,9 @@
 .slider {
   grid-area: slider; }
 
+.ctn-text {
+  grid-area: ctn-text; }
+
 .impacto {
   grid-area: impacto; }
 
@@ -196,6 +199,15 @@
 
 .ctn-contact {
   grid-area: ctn-contact; }
+
+.picnic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.slider {
+  grid-area: slider;
+  width: 100%; }
 
 .productos {
   display: grid;
@@ -893,7 +905,6 @@ img {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  padding-bottom: 40px;
   background-color: #e8f1f5;
   margin-top: 20px; }
 
@@ -902,7 +913,13 @@ img {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
+
+.ctn-texto2 img {
+  width: 100%;
+  height: 8px;
+  margin-top: 20px; }
 
 @media screen and (max-width: 768px) {
   .ctn-texto {
