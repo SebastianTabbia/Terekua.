@@ -53,47 +53,38 @@ let cantidad=0
      }
  }, 100);
 
-  // CONTADOR
+  // CONTADOR MESA PICNIC 1
 
-  addEventListener('DOMContentLoaded', ()=>{
-    const contadores = document.querySelectorAll('.contador_cantidad');
-    const velocidad = 1000;
+  let cont1=document.getElementById('cont1'),
+  cont2=document.getElementById('cont2'),
+  cont3=document.getElementById('cont3')
+  
+  let cant1=0,cant2=0,cant3=0,
+  tiem=100
 
-    const animarContadores = () =>{
-        for(const contador of contadores){
-            const actualizar_contador =() =>{
-                let cantidad_maxima = +contador.dataset.cantidadTotal,
-                valor_actual = +contador.innerText,
-                incremento = cantidad_maxima / velocidad;
-                if(valor_actual < cantidad_maxima){
-                    contador.innerText = Math.ceil(valor_actual + incremento)
-                    setTimeout((actualizar_contador), 5);
-                }else{
-                    contador.innerText = cantidad_maxima;
+ let tiempo1= setInterval(()=>{
+cont1.textContent=cant1+=1
 
-                }
-            }
-            actualizar_contador();
-        }
-    }
+if(cant1===170)
+{
+    clearInterval(tiempo1)
+}
+  },'${tiem}');
 
-    const mostrarContadores = elementos =>{
-        elementos.forEach(element => {
-            if(element.isIntersecting){
-                   element.target.classList.add('animar');
-                   element.target.classList.remove('ocultar');
-                   setTimeout(animarContadores, 300)
-            }
-        });
-    }
-
-    const observer = new IntersectionObserver(mostrarContadores, {
-        threshold: 0.75 //0 - 1 
-    })
-
-    const elementosHTML = document.querySelectorAll('.contador')
-    elementosHTML.forEach(elementoHTML =>{
-        observer.observe(elementoHTML)
-    })
+  let tiempo2= setInterval(()=>{
+    cont2.textContent=cant2+=1
     
-})
+    if(cant2===4100)
+    {
+        clearInterval(tiempo2)
+    }
+      },'${tiem}');
+
+      let tiempo3= setInterval(()=>{
+        cont3.textContent=cant3+=1
+        
+        if(cant3===4)
+        {
+            clearInterval(tiempo3)
+        }
+          },'${tiem}');

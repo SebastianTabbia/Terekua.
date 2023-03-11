@@ -207,6 +207,7 @@
 
 .banner {
   grid-area: banner;
+  padding-top: 80px;
 }
 
 .impacto {
@@ -243,18 +244,28 @@
   justify-content: center;
 }
 
+.referencias .ctn-l {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  margin-left: -30px;
+  padding-bottom: 20px;
+}
+
 .referencias .ctn-texto {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   margin: auto;
-  margin-left: 20px;
   text-align: center;
 }
 
 .referencias .ctn-texto p {
   font-size: 14px;
+  width: 90%;
+  text-align: left;
+  padding-bottom: 20px;
 }
 
 .ctn-precio {
@@ -289,17 +300,45 @@
   font-size: 20px;
 }
 
-.ctn-contador {
+.contenedor {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.contador-ctn {
+.item {
+  height: auto;
   width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.item span:nth-child(1) {
+  font-size: 2.8em;
+  padding-bottom: 10px;
+}
+
+.item .fa-solid {
+  color: black;
+  font-size: 40px;
+}
+
+.seguidores {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.cantidad {
+  font-size: 40px;
 }
 
 @media screen and (max-width: 768px) {

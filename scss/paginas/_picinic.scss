@@ -1,7 +1,7 @@
 .picnic {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0,5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0, 5fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -14,6 +14,7 @@
 
 .banner {
     grid-area: banner;
+    padding-top: 80px;
 }
 
 .impacto {
@@ -35,19 +36,28 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.imagenes{
+.imagenes {
     width: 50%;
 }
-.referencias{
+
+.referencias {
     width: 50%;
     display: flex;
     flex-direction: column;
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+
+.referencias .ctn-l {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+    margin-left: -30px;
+    padding-bottom: 20px;
 }
 
 .referencias .ctn-texto {
@@ -56,15 +66,17 @@
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    margin-left: 20px;
     text-align: center;
 }
 
-.referencias .ctn-texto p{
+.referencias .ctn-texto p {
     font-size: 14px;
+    width: 90%;
+    text-align: left;
+    padding-bottom: 20px;
 }
 
-.ctn-precio{
+.ctn-precio {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,7 +84,7 @@
     width: 100%;
 }
 
-.ctn-precio h3{
+.ctn-precio h3 {
     font-size: 40px;
     font-weight: 800;
 }
@@ -86,31 +98,64 @@
     padding-top: 20px;
 }
 
-.impacto .ctn-texto{
+.impacto .ctn-texto {
     width: 100%;
 }
 
-.impacto .ctn-texto h2{
+.impacto .ctn-texto h2 {
     font-size: 30px
 }
 
-.impacto .ctn-texto h3{
+.impacto .ctn-texto h3 {
     font-size: 20px
 }
 
-.ctn-contador{
+.contenedor{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.contador-ctn{
+.item{
+    height: auto;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
+.item span:nth-child(1){
+    font-size: 2.8em;
+    padding-bottom: 10px;
+}
+
+.item .fa-solid{
+    color: black;
+    font-size: 40px;
+}
+
+.seguidores{
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 10px;
+font-weight: 400;
+}
+
+.cantidad{
+    font-size: 40px;
+}
+
+
+
+
+
+//MEDIA
 
 @media screen and (max-width: 768px) {
     .slider {
@@ -118,17 +163,18 @@
         height: 100%;
     }
 
-    .imagenes{
+    .imagenes {
         width: 100%;
         justify-content: flex-start;
         margin-bottom: 60px;
     }
-    .referencias{
+
+    .referencias {
         width: 80%;
         text-align: center;
     }
 
-    .ctn-lista1 li{
+    .ctn-lista1 li {
         font-size: 14px;
     }
 }
