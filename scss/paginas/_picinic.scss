@@ -110,48 +110,9 @@
     font-size: 20px
 }
 
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+.impacto img{
+    padding-top:40px ;
 }
-
-.item{
-    height: auto;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.item span:nth-child(1){
-    font-size: 2.8em;
-    padding-bottom: 10px;
-}
-
-.item .fa-solid{
-    color: black;
-    font-size: 40px;
-}
-
-.seguidores{
-    font-size: 14px;
-    text-align: center;
-    padding-bottom: 10px;
-font-weight: 400;
-}
-
-.cantidad{
-    font-size: 40px;
-}
-
-
 
 
 
